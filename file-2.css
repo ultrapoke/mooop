@@ -1,0 +1,190 @@
+ @charset "utf-8";
+ 
+div.calcHeader, div.calcBody {
+		width:240px;
+		border:solid 1px #336666;
+		
+	}
+	div.calcHeader {
+		height:20px;
+		background-color:#336666; 
+	}
+	div.calcHeader:focus {
+		outline-width:0px;
+	}
+	
+	div.calcBody {
+		height:225px;
+		background-color:#999999;
+	}
+	div.displayWindow {
+		margin-left: 7px;
+		width: 220px;
+		height: 30px;
+		background-color: #fff;
+		text-align: right;
+		margin-top: 7px;
+		font-family: arial;
+		font-size: 24px;
+		line-height: 30px;
+		padding-right: 5px;
+	}
+	div.displayWindow.small {
+		font-size: 18px;
+	}
+	div.displayWindow.verySmall {
+		font-size: 12px;
+		line-height: 15px;
+	}
+	div.displayWindow.extraSmall {
+		font-size: 9px;
+		line-height: 10px;
+	}
+	
+	div.displayWindow:focus{
+		outline-width: 0px;
+	}
+	
+	div.calcBody table { border-collapse: collapse; }
+	div.calcBody table tbody tr { margin: 0px; padding: 0px; }
+	div.calcBody table tbody tr td { width: 48px; height: 45px; margin: 0px; padding: 0px; }
+	div.calcBody table tbody tr td input[type='button'] { text-align: center; width: 40px; height: 40px; }
+	
+	td.padding {
+		width: 1px !important;
+	}
+	tr.topSpace, td.topSpace {
+		height: 5px !important;
+	}
+	
+
+.zeroButton {
+	width: 80px;
+}
+
+.calcButton {
+	border-radius: 3px;
+	border: 1px solid #8d8e8f;
+	/* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #fefefe, #e7e7e7);
+	/* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image: -moz-linear-gradient(top, #fefefe, #e7e7e7);
+	/* Firefox 3.6-15 */
+	background-image: linear-gradient(to bottom, #fefefe, #e7e7e7);
+	/* Firefox 16+, IE10, Opera 12.50+ */
+
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0
+		rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px
+		0 rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0
+		rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+	width: 35px;
+	height: 35px;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+.calcButton.zeroButton {
+	width: 80px;
+}
+.calcButton.rad {
+	font-size: 18px;
+	font-family: georgia;
+	
+}
+
+@-moz-document url-prefix() {
+	.calcButton.pi {
+		font-family: calibri;
+		font-size: 18px;
+	}
+}
+
+
+.calcButton:focus{
+	outline-width: 0px;
+}
+
+.calcButton.disabled,.calcButton.disabled:hover,.calcButton.disabled:active {
+	cursor: default;
+	border: 1px solid #8d8e8f;
+	background-color: #fefefe;
+	color: #999;
+	background-position: bottom center;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe),
+		to(#e7e7e7));
+	/* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #fefefe, #e7e7e7);
+	/* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image: -moz-linear-gradient(top, #fefefe, #e7e7e7);
+	/* Firefox 3.6-15 */
+	background-image: linear-gradient(to bottom, #fefefe, #e7e7e7);
+	/* Firefox 16+, IE10, Opera 12.50+ */
+	
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0
+		rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px
+		0 rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0
+		rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+	
+}
+
+.calcButton.icon:hover {
+	color: #333;
+	border: 1px solid #6b6b6b;
+	background-color: #ededed;
+	/* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #ededed, #c7c6c6);
+	/* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image: -moz-linear-gradient(top, #ededed, #c7c6c6);
+	/* Firefox 3.6-15 */
+	background-image: linear-gradient(to bottom, #ededed, #c7c6c6);
+	/* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+.calcButton:hover,.calcButton.hover {
+	color: #333;
+	border: 1px solid #6b6b6b;
+	background-color: #ededed;
+	/* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #ededed, #c7c6c6);
+	/* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image: -moz-linear-gradient(top, #ededed, #c7c6c6);
+	/* Firefox 3.6-15 */
+	background-image: linear-gradient(to bottom, #ededed, #c7c6c6);
+	/* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+.calcButton:active,.calcButton.selected {
+	background-color: #c3c3c3;
+	/* Safari 4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #c3c3c3, #efefef);
+	/* Chrome 10+, Safari 5.1+, iOS 5+ */
+	background-image: -moz-linear-gradient(top, #c3c3c3, #efefef);
+	/* Firefox 3.6-15 */
+	background-image: linear-gradient(to bottom, #c3c3c3, #efefef);
+	/* Firefox 16+, IE10, Opera 12.50+ */
+	
+	box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.45);
+	-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.45);
+}
+
+
+
+
+
+
+
+   
+
+

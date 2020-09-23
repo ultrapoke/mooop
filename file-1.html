@@ -1,0 +1,26 @@
+<!DOCTYPE html >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Standard Calculator</title>
+   
+<link href="styles/standardCalc.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-latest.js"></script>
+<script type="text/javascript" src="scripts/standardCalculator.js"></script>
+ 
+    
+
+</head>
+<center>
+   <body>
+        <div id="calcContainer" style="text-align:center;"></div>
+    </body>
+
+</center>
+
+
+</html>
+<script type="text/javascript">
+	$(document).ready(function() {
+		new Calculator({"container": "#calcContainer"});
+	});
+</script>
